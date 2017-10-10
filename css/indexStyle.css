@@ -1,0 +1,455 @@
+html,body{
+  height:100%;
+}
+#app {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: url(../img/public/bg.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+#page1,
+#page2,
+#page3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+#page1 img,
+#page2 img,
+#page3 img {
+  width: 100%;
+}
+.warning {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  transition: all 0.3s;
+}
+.warning .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -140px;
+  margin-top: -150px;
+  width: 280px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+}
+.warning .container .text {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 12px;
+}
+.warning .container .close,
+.warning .container .sure {
+  display: inline-block;
+  width: 30%;
+  background: #e62351;
+  color: #FFFFFF;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #CCCCCC;
+  font-size: 14px;
+  margin: 0px 5px;
+}
+.warning .container .sure {
+  background: #39de9a;
+}
+#page1 {
+  background: url(../img/public/index.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+#page1 .start {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  bottom: 3%;
+  top: auto;
+}
+#page1 .start img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: breath 5s infinite;
+  animation: breath 3s infinite;
+}
+#page2 {
+  background: url(../img/public/bg2.jpg) no-repeat 0 0;
+  background-size: 100%;
+}
+#page2 .show {
+  position: relative;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+}
+#page2 .show .ipt {
+  height: 45px;
+  margin: 20px 0;
+  line-height: 45px;
+}
+#page2 .show .ipt input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  text-align: center;
+}
+#page2 .enter {
+  position: relative;
+  top: 36%;
+  width: 28%;
+  left: 36%;
+}
+#page2 .enter img {
+  border-radius: 50%;
+  -webkit-animation: breath 5s infinite;
+  animation: breath 5s infinite;
+}
+#page3 .menu {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  top: auto;
+  bottom: 0;
+  font-size: 0;
+  z-index: 500;
+}
+#page3 .menu .menuList {
+  display: inline-block;
+  width: 33.3%;
+  color: #000;
+  background: url(../img/public/bg1.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  border-left: 1px solid  #3b3c3d;
+  text-align: center;
+  transition: all 0.3s;
+}
+#page3 .menu .menuList:first-child {
+  border: 0;
+}
+#page3 .menu .menuList.active {
+  background: url(../img/public/bg2.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  color: #ffffff;
+}
+#page3 .main {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+#page3 .main .box1,
+#page3 .main .box2,
+#page3 .main .box3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+#page3 .main .box1 {
+  position: absolute;
+}
+#page3 .main .box1 .boxContent1 {
+  position: absolute;
+  width: 100%;
+  top: auto;
+  bottom: -2.2%;
+}
+#page3 .main .box1 .mainBg {
+  position: relative;
+  width: 100%;
+}
+#page3 .main .box1 .mainBg img {
+  width: 100%;
+}
+#page3 .main .box1 .tips {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#page3 .main .box1 .tips .tip1,
+#page3 .main .box1 .tips .tip2,
+#page3 .main .box1 .tips .tip3,
+#page3 .main .box1 .tips .tip4,
+#page3 .main .box1 .tips .tip5,
+#page3 .main .box1 .tips .tip6 {
+  position: absolute;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box1 .tips .tip1 {
+  width: 12%;
+  left: 65%;
+  top: 16%;
+}
+#page3 .main .box1 .tips .tip2 {
+  width: 16%;
+  left: 40%;
+  top: 29.2%;
+}
+#page3 .main .box1 .tips .tip3 {
+  width: 16%;
+  left: 64%;
+  top: 29.2%;
+}
+#page3 .main .box1 .tips .tip4 {
+  width: 14%;
+  top: 44%;
+  left: 28%;
+}
+#page3 .main .box1 .tips .tip5 {
+  width: 20%;
+  top: 49.5%;
+  left: 42%;
+}
+#page3 .main .box1 .tips .tip6 {
+  width: 15%;
+  top: 80.6%;
+  left: 59%;
+}
+#page3 .main .box2 .energyBox .energy1,
+#page3 .main .box2 .energyBox .energy2,
+#page3 .main .box2 .energyBox .energy3,
+#page3 .main .box2 .energyBox .energy4,
+#page3 .main .box2 .energyBox .energy5,
+#page3 .main .box2 .energyBox .energy6 {
+  position: absolute;
+  width: 30%;
+}
+#page3 .main .box2 .energyBox .energy1 {
+  left: 10%;
+  top: 10%;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box2 .energyBox .energy2 {
+  left: 55%;
+  top: 10%;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box2 .energyBox .energy3 {
+  left: 35%;
+  top: 28%;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box2 .energyBox .energy4 {
+  left: 10%;
+  top: 45%;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box2 .energyBox .energy5 {
+  left: 55%;
+  top: 45%;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box2 .energyBox .energy6 {
+  left: 35%;
+  top: 60%;
+  -webkit-animation: floatUD 5s infinite linear;
+  animation: floatUD 5s infinite linear;
+}
+#page3 .main .box2 .footer {
+  position: absolute;
+  top: auto;
+  width: 100%;
+  bottom: 40px;
+}
+#page3 .main .box3 .giftBox {
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  left: 10%;
+}
+#page3 .main .box3 .giftBox .gift {
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  margin: 15px auto;
+}
+#page3 .main .box3 .giftBox .gift .text {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 4%;
+  width: 60%;
+  background: url(../img/gift/txt1_1.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift .text img {
+  opacity: 0;
+}
+#page3 .main .box3 .giftBox .gift .giftPic {
+  vertical-align: middle;
+  display: inline-block;
+  width: 25%;
+}
+#page3 .main .box3 .giftBox .gift .giftPic img {
+  border: 3px solid #838384;
+}
+#page3 .main .box3 .giftBox .gift:nth-child(2) .text {
+  background: url(../img/gift/txt2_1.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift:nth-child(3) .text {
+  background: url(../img/gift/txt3_1.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift:nth-child(4) .text {
+  background: url(../img/gift/txt4_1.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift:nth-child(5) .text {
+  background: url(../img/gift/txt5_1.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift.active .giftPic {
+  vertical-align: middle;
+  display: inline-block;
+  width: 25%;
+}
+#page3 .main .box3 .giftBox .gift.active .giftPic img {
+  border: 3px solid #e6290f;
+}
+#page3 .main .box3 .giftBox .gift.active:nth-child(1) .text {
+  background: url(../img/gift/txt1_2.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift.active:nth-child(2) .text {
+  background: url(../img/gift/txt2_2.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift.active:nth-child(3) .text {
+  background: url(../img/gift/txt3_2.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift.active:nth-child(4) .text {
+  background: url(../img/gift/txt4_2.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift.active:nth-child(5) .text {
+  background: url(../img/gift/txt5_2.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .footer {
+  position: absolute;
+  bottom: 40px;
+  top: auto;
+}
+#page3 .showBox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 600;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+#page3 .showBox .noticePic {
+  position: absolute;
+  width: 76%;
+  left: 12%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#page3 .showBox .noticePic span {
+  position: absolute;
+  display: inline-block;
+  width: 15%;
+  height: 6%;
+  left: auto;
+  top: auto;
+  right: 6%;
+  bottom: 6%;
+}
+#page3 .showBox .arrow {
+  position: absolute;
+  width: 16%;
+  left: 42%;
+  top: auto;
+  bottom: 5%;
+}
+#page3 .prizeBox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 600;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+}
+#page3 .prizeBox .container {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 50%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 5px;
+}
+#page3 .prizeBox .container .pic {
+  width: 30%;
+  margin: 10px auto;
+  border: 2px solid #E6290F;
+  font-size: 0;
+}
+#page3 .prizeBox .container .prizeText {
+  width: 70%;
+  margin: 5px auto;
+}
+#page3 .prizeBox .container .code {
+  text-align: center;
+  margin: 5px auto;
+  color: #838384;
+}
+#page3 .prizeBox .arrow {
+  position: absolute;
+  width: 16%;
+  left: 42%;
+  top: auto;
+  bottom: 5%;
+}
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  background: #ffffff;
+  opacity: 1;
+}
+#loading.hidden {
+  opacity: 0;
+  z-index: -1;
+}
+#loading .loadingGif {
+  position: absolute;
+  width: 60px;
+  padding: 5px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  left: 50%;
+  top: 40%;
+  margin-top: -30px;
+  margin-left: -30px;
+  font-size: 0;
+}
+#loading .loadingGif img {
+  width: 100%;
+}
