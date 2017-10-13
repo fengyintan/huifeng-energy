@@ -28,7 +28,9 @@ var vm = new Vue({
         showBoxState: false,
         gift_id: 2,
         proIntro: ["common/assets/img/program1/text1.png", "common/assets/img/program1/text2.png", "common/assets/img/program1/text3.png", "common/assets/img/program1/text4.png", "common/assets/img/program1/text5.png", "common/assets/img/program1/text6.png", ],
-        giftList: ["common/assets/img/gift/gift1.jpg", "common/assets/img/gift/gift2.jpg", "common/assets/img/gift/gift3.jpg", "common/assets/img/gift/gift4.jpg", "common/assets/img/gift/gift5.jpg", ],
+        giftList: ["common/assets/img/gift/gift1.jpg", "common/assets/img/gift/gift2.jpg", "common/assets/img/gift/gift3.jpg", "common/assets/img/gift/gift4.jpg", "common/assets/img/gift/gift0.png", ],
+//       proIntro: ["./img/program1/text1.png", "./img/program1/text2.png", "./img/program1/text3.png", "./img/program1/text4.png", "./img/program1/text5.png", "./img/program1/text6.png", ],
+//      giftList: ["common/assets/img/gift/gift1.jpg", "common/assets/img/gift/gift2.jpg", "common/assets/img/gift/gift3.jpg", "common/assets/img/gift/gift4.jpg", "common/assets/img/gift/gift5.jpg", ],
         chooseIntro: "",
         energy1: 0,
         energy2: 0,
@@ -154,8 +156,6 @@ var vm = new Vue({
             gift[0].className = "gift";
             gift[1].className = "gift";
             gift[2].className = "gift";
-            gift[3].className = "gift";
-            gift[4].className = "gift";
             var target = e.currentTarget;
             var power = target.getAttribute("data-power");
             this.giftName = target.getAttribute("data-gift");
@@ -203,7 +203,7 @@ var vm = new Vue({
         },
         giftResult: function() {
             this.giftResultState = true;
-            this.giftResultPic = this.giftList[this.giftNum - 2];
+            this.giftResultPic = this.giftList[this.giftNum - 1];
         },
         closeGiftResult: function() {
             this.giftResultState = false;
@@ -271,7 +271,7 @@ var vm = new Vue({
             });
         },
         getJoinTime: function(date2) {
-            console.log(date2)
+//          console.log(date2)
             var date = new Date(Number(date2));
             var year = date.getFullYear();
             var month = (date.getMonth() + 1).toString();

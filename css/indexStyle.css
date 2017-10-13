@@ -1,6 +1,3 @@
-html,body{
-  height:100%;
-}
 #app {
   position: fixed;
   height: 100%;
@@ -67,7 +64,7 @@ html,body{
 }
 #page1 {
   background: url(../img/public/index.jpg) no-repeat 0 0;
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 #page1 .start {
   position: absolute;
@@ -87,7 +84,7 @@ html,body{
   background-size: 100%;
 }
 #page2 .show {
-  position: relative;
+  position: absolute;
   left: 15%;
   top: 20%;
   width: 70%;
@@ -106,10 +103,11 @@ html,body{
   text-align: center;
 }
 #page2 .enter {
-  position: relative;
-  top: 36%;
+  position: absolute;
+  top: auto;
   width: 28%;
   left: 36%;
+  bottom: 10%;
 }
 #page2 .enter img {
   border-radius: 50%;
@@ -119,7 +117,7 @@ html,body{
 #page3 .menu {
   position: fixed;
   width: 100%;
-  height: 45px;
+  height: 50px;
   top: auto;
   bottom: 0;
   font-size: 0;
@@ -132,8 +130,8 @@ html,body{
   background: url(../img/public/bg1.png) no-repeat 0 0;
   background-size: 100% 100%;
   font-size: 18px;
-  height: 45px;
-  line-height: 45px;
+  height: 50px;
+  line-height: 50px;
   border-left: 1px solid  #3b3c3d;
   text-align: center;
   transition: all 0.3s;
@@ -167,7 +165,7 @@ html,body{
   position: absolute;
   width: 100%;
   top: auto;
-  bottom: -2.2%;
+  bottom: -1.5%;
 }
 #page3 .main .box1 .mainBg {
   position: relative;
@@ -270,7 +268,7 @@ html,body{
   position: absolute;
   top: auto;
   width: 100%;
-  bottom: 40px;
+  bottom: 50px;
 }
 #page3 .main .box3 .giftBox {
   position: absolute;
@@ -288,7 +286,7 @@ html,body{
   vertical-align: middle;
   display: inline-block;
   margin-top: 4%;
-  width: 60%;
+  width: 80%;
   background: url(../img/gift/txt1_1.png) no-repeat 0 0;
   background-size: 100%;
 }
@@ -302,6 +300,10 @@ html,body{
 }
 #page3 .main .box3 .giftBox .gift .giftPic img {
   border: 3px solid #838384;
+}
+#page3 .main .box3 .giftBox .gift .textGift {
+  width: 90%;
+  margin: 0 auto;
 }
 #page3 .main .box3 .giftBox .gift:nth-child(2) .text {
   background: url(../img/gift/txt2_1.png) no-repeat 0 0;
@@ -317,6 +319,10 @@ html,body{
 }
 #page3 .main .box3 .giftBox .gift:nth-child(5) .text {
   background: url(../img/gift/txt5_1.png) no-repeat 0 0;
+  background-size: 100%;
+}
+#page3 .main .box3 .giftBox .gift:nth-child(6) .text {
+  background: url(../img/gift/txt6_1.png) no-repeat 0 0;
   background-size: 100%;
 }
 #page3 .main .box3 .giftBox .gift.active .giftPic {
@@ -349,7 +355,7 @@ html,body{
 }
 #page3 .main .box3 .footer {
   position: absolute;
-  bottom: 40px;
+  bottom: 45px;
   top: auto;
 }
 #page3 .showBox {
@@ -405,10 +411,14 @@ html,body{
   padding: 5px;
 }
 #page3 .prizeBox .container .pic {
-  width: 30%;
+  height: 80px;
   margin: 10px auto;
-  border: 2px solid #E6290F;
   font-size: 0;
+  text-align: center;
+}
+#page3 .prizeBox .container .pic img {
+  width: auto;
+  max-height: 100%;
 }
 #page3 .prizeBox .container .prizeText {
   width: 70%;
@@ -431,7 +441,7 @@ html,body{
   width: 100%;
   height: 100%;
   z-index: 1500;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
 #loading.hidden {
